@@ -17,5 +17,6 @@ composer require nookery/laravel-hammer --dev
 |  ----       | ---- |
 | ping        | 输出：pang| 
 | foo         | 输出：bar| 
+| version     | 输出重要组件的版本号| 
 | clear       | 清理一切缓存 |
 | fresh       | 清理缓存，重装依赖，刷新应用|
