@@ -1,8 +1,7 @@
 <?php
 
-namespace Nookery\Best\Commands;
+namespace Nookery\Hammer\Commands;
 
-use Exception;
 use Illuminate\Console\Command;
 
 use const PHP_VERSION;

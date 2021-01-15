@@ -1,6 +1,6 @@
 <?php
 
-namespace Nookery\Best\Commands;
+namespace Nookery\Hammer\Commands;
 
 use Illuminate\Console\Command;
 

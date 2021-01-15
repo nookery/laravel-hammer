@@ -3,11 +3,11 @@
 namespace Nookery\Best\Providers;
 
 use Illuminate\Support\ServiceProvider;
-use Nookery\Best\Commands\Clear;
-use Nookery\Best\Commands\Foo;
-use Nookery\Best\Commands\Fresh;
-use Nookery\Best\Commands\Ping;
-use Nookery\Best\Commands\Version;
+use Nookery\Hammer\Commands\Clear;
+use Nookery\Hammer\Commands\Foo;
+use Nookery\Hammer\Commands\Fresh;
+use Nookery\Hammer\Commands\Ping;
+use Nookery\Hammer\Commands\Version;
 
 class BaseServiceProvider extends ServiceProvider
 {

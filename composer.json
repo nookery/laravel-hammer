@@ -29,7 +29,7 @@
 	"extra": {
 		"laravel": {
 			"providers": [
-				"Nookery\\Best\\Providers\\BaseServiceProvider"
+				"Nookery\\Hammer\\Providers\\BaseServiceProvider"
 			]
 		}
 	}
