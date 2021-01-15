@@ -1,4 +1,4 @@
-Laravel Hammer
+Laravel Hammer 🔨
 ============
 
 ## 介绍
