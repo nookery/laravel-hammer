@@ -12,6 +12,14 @@ composer require nookery/laravel-hammer --dev
 ```
 
 ## 使用
+```shell
+php artisan ping
+
+# 输出
+pang
+```
+
+可用的命令：
 
 | 命令         | 用途|
 |  ----       | ---- |
