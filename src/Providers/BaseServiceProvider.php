@@ -7,6 +7,7 @@ use Nookery\Best\Commands\Clear;
 use Nookery\Best\Commands\Foo;
 use Nookery\Best\Commands\Fresh;
 use Nookery\Best\Commands\Ping;
+use Nookery\Best\Commands\Version;
 
 class BaseServiceProvider extends ServiceProvider
 {
@@ -21,6 +22,7 @@ class BaseServiceProvider extends ServiceProvider
                 Fresh::class,
                 Foo::class,
                 Ping::class,
+                Version::class,
             ]);
         }
     }

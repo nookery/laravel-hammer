@@ -5,6 +5,8 @@ namespace Nookery\Best\Commands;
 use Exception;
 use Illuminate\Console\Command;
 
+use const PHP_VERSION;
+
 class Version extends Command
 {
     /**
@@ -26,6 +28,19 @@ class Version extends Command
      */
     public function handle()
     {
-        $this->call('-V');
+        $this->info('PHP: '.PHP_VERSION);
+        $this->info('Laravel: '.app()->version());
+
+        $this->info("\r");
+
+        $this->info('PHP pcntl: '.$this->extensionLoaded('pcntl'));
+        $this->info('PHP Redis: '.$this->extensionLoaded('redis'));
+        $this->info('PHP mysqli: '.$this->extensionLoaded('mysqli'));
+        $this->info('PHP OPcache: '.$this->extensionLoaded('Zend OPcache'));
+    }
+
+    private function extensionLoaded($name = '')
+    {
+        return extension_loaded($name) ? '已加载' : '未加载';
     }
 }
