@@ -18,7 +18,7 @@ class Ping extends Command
      *
      * @var string
      */
-    protected $description = '用于测试Artisan命令';
+    protected $description = '用于测试 Artisan 命令';
 
     /**
      * Execute the console command.

@@ -2,9 +2,10 @@
 
 namespace Nookery\Best\Providers;
 
-use EstGroupe\Taggable\Contracts\TaggingUtility;
-use EstGroupe\Taggable\Util;
 use Illuminate\Support\ServiceProvider;
+use Nookery\Best\Commands\Clear;
+use Nookery\Best\Commands\Fresh;
+use Nookery\Best\Commands\Ping;
 
 class BaseServiceProvider extends ServiceProvider
 {
@@ -15,29 +16,10 @@ class BaseServiceProvider extends ServiceProvider
     {
         if ($this->app->runningInConsole()) {
             $this->commands([
-                Ping
+                Clear::class,
+                Fresh::class,
+                Ping::class,
             ]);
         }
-    }
-
-    /**
-     * Register the service provider.
-     *
-     * @return void
-     */
-    public function register()
-    {
-        $this->app->singleton(TaggingUtility::class, function () {
-            return new Util;
-        });
-    }
-
-    /**
-     * (non-PHPdoc)
-     * @see \Illuminate\Support\ServiceProvider::provides()
-     */
-    public function provides()
-    {
-        return [TaggingUtility::class];
     }
 }

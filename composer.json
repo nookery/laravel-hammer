@@ -1,9 +1,9 @@
 {
-	"name": "nookery/laravel-best",
-	"description": "常用的 Artisan 命令",
+	"name": "nookery/laravel-hammer",
+	"description": "整合常用的 Artisan 命令",
 	"license": "MIT",
-	"homepage": "https://github.com/nookery/laravel-best",
-	"keywords": ["tag", "tags", "tagging", "laravel", "taggable", "tagged", "eloquent", "laravel5"],
+	"homepage": "https://github.com/nookery/laravel-hammer",
+	"keywords": ["laravel", "artisan", "tool", "hammer"],
 	"authors": [
 		{
 			"name": "nookery",
@@ -29,7 +29,7 @@
 	"extra": {
 		"laravel": {
 			"providers": [
-				"Nookery\\Best\\BaseServiceProvider"
+				"Nookery\\Best\\Providers\\BaseServiceProvider"
 			]
 		}
 	}
