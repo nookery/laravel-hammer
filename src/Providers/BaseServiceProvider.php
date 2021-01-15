@@ -1,6 +1,6 @@
 <?php
 
-namespace Nookery\Best\Providers;
+namespace Nookery\Hammer\Providers;
 
 use Illuminate\Support\ServiceProvider;
 use Nookery\Hammer\Commands\Clear;
