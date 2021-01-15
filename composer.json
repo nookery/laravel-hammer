@@ -1,0 +1,36 @@
+{
+	"name": "nookery/laravel-best",
+	"description": "常用的 Artisan 命令",
+	"license": "MIT",
+	"homepage": "https://github.com/nookery/laravel-best",
+	"keywords": ["tag", "tags", "tagging", "laravel", "taggable", "tagged", "eloquent", "laravel5"],
+	"authors": [
+		{
+			"name": "nookery",
+			"email": "nookery@outlook.com"
+		}
+	],
+	"require": {
+		"php": ">=7.0",
+		"illuminate/support": "~8.0"
+	},
+	"require-dev": {
+	},
+	"autoload": {
+		"psr-4": {
+			"Nookery\\Best\\": "src/"
+		}
+	},
+	"autoload-dev": {
+		"classmap": [
+			"tests/TestCase.php"
+		]
+	},
+	"extra": {
+		"laravel": {
+			"providers": [
+				"Nookery\\Best\\BaseServiceProvider"
+			]
+		}
+	}
+}
