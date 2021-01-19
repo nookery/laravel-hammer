@@ -4,6 +4,7 @@ namespace Nookery\Hammer\Providers;
 
 use Illuminate\Support\ServiceProvider;
 use Nookery\Hammer\Commands\Clear;
+use Nookery\Hammer\Commands\Fix;
 use Nookery\Hammer\Commands\Foo;
 use Nookery\Hammer\Commands\Fresh;
 use Nookery\Hammer\Commands\Ping;
@@ -19,6 +20,7 @@ class BaseServiceProvider extends ServiceProvider
         if ($this->app->runningInConsole()) {
             $this->commands([
                 Clear::class,
+                Fix::class,
                 Fresh::class,
                 Foo::class,
                 Ping::class,
