@@ -3,7 +3,6 @@
 namespace Nookery\Hammer\Commands;
 
 use Illuminate\Console\Command;
-
 use const PHP_VERSION;
 
 class Version extends Command
