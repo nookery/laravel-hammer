@@ -13,7 +13,8 @@
 	"require": {
 		"php": ">=7.0",
 		"illuminate/support": "~8.0",
-		"friendsofphp/php-cs-fixer": "^2.16"
+		"friendsofphp/php-cs-fixer": "^2.16",
+		"barryvdh/laravel-ide-helper": "^2.0"
 	},
 	"require-dev": {
 	},
