@@ -3,6 +3,7 @@
 namespace Nookery\Hammer\Providers;
 
 use Illuminate\Support\ServiceProvider;
+use Nookery\Hammer\Commands\Check;
 use Nookery\Hammer\Commands\Clear;
 use Nookery\Hammer\Commands\Fix;
 use Nookery\Hammer\Commands\Foo;
@@ -20,6 +21,7 @@ class BaseServiceProvider extends ServiceProvider
     {
         if ($this->app->runningInConsole()) {
             $this->commands([
+                Check::class,
                 Clear::class,
                 Fix::class,
                 Fresh::class,
