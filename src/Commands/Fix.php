@@ -34,6 +34,6 @@ class Fix extends Command
         // 始终复制，始终以本扩展包的配置文件为标准
         File::copy($configFilePath, base_path('.php_cs.dist'));
 
-        passthru('./vendor/bin/php-cs-fixer fix -vvv');
+        passthru('./vendor/bin/php-cs-fixer fix');
     }
 }
