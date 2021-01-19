@@ -23,8 +23,11 @@ pang
 
 | 命令         | 用途|
 |  ----       | ---- |
-| ping        | 输出：pang| 
-| foo         | 输出：bar| 
-| version     | 输出重要组件的版本号| 
+| check       | 检查代码、生成IDE辅助文件、运行单元测试| 
 | clear       | 清理一切缓存 |
+| fix         | 检查和修正代码 |
+| foo         | 输出：bar| 
 | fresh       | 清理缓存，重装依赖，刷新应用|
+| ide         | 生成IDE辅助文件|
+| ping        | 输出：pang| 
+| version     | 输出重要组件的版本号| 
