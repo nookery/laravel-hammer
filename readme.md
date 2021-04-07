@@ -29,5 +29,6 @@ pang
 | foo         | 输出：bar| 
 | fresh       | 清理缓存，重装依赖，刷新应用|
 | ide         | 生成IDE辅助文件|
+| make:database {name}         | 新建数据库|
 | ping        | 输出：pang| 
 | version     | 输出重要组件的版本号| 

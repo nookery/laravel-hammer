@@ -9,6 +9,8 @@ use Nookery\Hammer\Commands\Fix;
 use Nookery\Hammer\Commands\Foo;
 use Nookery\Hammer\Commands\Fresh;
 use Nookery\Hammer\Commands\Ide;
+use Nookery\Hammer\Commands\Make;
+use Nookery\Hammer\Commands\MakeDatabase;
 use Nookery\Hammer\Commands\Ping;
 use Nookery\Hammer\Commands\Version;
 
@@ -27,6 +29,7 @@ class BaseServiceProvider extends ServiceProvider
                 Fresh::class,
                 Foo::class,
                 Ide::class,
+                MakeDatabase::class,
                 Ping::class,
                 Version::class,
             ]);
