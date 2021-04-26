@@ -36,7 +36,8 @@ class MakeDatabase extends Command
             foreach ($databases as $database) {
                 if ($database->Database === $name) {
                     $this->info('数据库 '.$name.' 已存在');
-                    exit;
+
+                    return;
                 }
             }
 
