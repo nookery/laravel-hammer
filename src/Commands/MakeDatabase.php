@@ -41,7 +41,7 @@ class MakeDatabase extends Command
                 }
             }
 
-            DB::update("create database {$name};");
+            DB::update("create database `{$name}`;");
 
             $this->info("已新建数据库：".$name);
         }
