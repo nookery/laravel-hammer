@@ -30,12 +30,12 @@ class MakeDatabase extends Command
         $name = $this->argument('name');
 
         if (!preg_match('/^[a-zA-Z0-9_-]{1,64}$/', $name)) {
-            $this->error('数据库名称错误');
+            $this->error(' - 数据库名称错误');
         } else {
             $databases = DB::select('show databases');
             foreach ($databases as $database) {
                 if ($database->Database === $name) {
-                    $this->info('数据库 '.$name.' 已存在');
+                    $this->info(' - 数据库 '.$name.' 已存在');
 
                     return;
                 }
@@ -43,7 +43,7 @@ class MakeDatabase extends Command
 
             DB::update("create database `{$name}`;");
 
-            $this->info("已新建数据库：".$name);
+            $this->info(" - 已新建数据库：".$name);
         }
     }
 }
